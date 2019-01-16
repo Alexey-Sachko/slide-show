@@ -1,0 +1,134 @@
+@import "nekoAnim.css"
+
+
+body
+	font-family: 'Open-sans', sans-serif
+	background-color: #c4cdd6
+	color: #000
+
+.btn-container
+	position: fixed
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: #c4cdd6
+	.my-btn
+		font-size: 16px
+
+.main
+	.container
+		height: 100%
+		position: absolute
+		top: 0
+		left: 50%
+		margin-left: -585px
+		padding-top: 230px
+	.btn 
+		font-size: 15px
+		text-transform: uppercase
+	&-text
+		&__title
+			font-size: 42px
+		&__descr
+			font-size: 23px
+		&__btn2
+			margin-left: 13px
+			background-color: transparent
+			border: 1px solid #000
+			color: #000
+			&:hover
+				background-color: transparent
+	.carousel-indicators
+		width: 1170px
+		margin-left: -570px
+	.prev-wrap
+		padding: 0 5px
+		&.active
+			width: 25%
+			height: auto
+			background-color: transparent
+			.preview
+				background-color: rgba(#000, 0.7)
+	.preview
+		background-color: rgba(#000, 0.5)
+		padding: 5px
+		text-align: left
+		border-radius: 3px
+		color: #fff
+		img
+			border-radius: 3px
+	.text 
+		&_small
+			font-size: 11px
+			margin-bottom: 1px
+			margin-top: 2px
+			color: #e2dedc
+		&_norm
+			font-size: 12px
+			font-weight: bold
+			margin-bottom: 0
+	.slide-inner
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		min-height: 670px
+		&_1
+			background-image: url(../img/slides/slider_1.jpg)
+		&_2
+			background-image: url(../img/slides/slider_2.jpg)
+		&_3
+			background-image: url(../img/slides/slider_3.jpg)
+		&_4
+			background-image: url(../img/slides/slider_4.jpg)
+
+@media (max-width: 1200px)
+	.main 
+		.container
+			margin-left: -485px
+		.carousel-indicators
+			width: 970px
+			margin-left: -485px
+
+// @media (max-width: 992px)
+// 	.main 
+// 		.container
+// 			margin-left: -375px
+// 		.carousel-indicators
+// 			width: 750px
+// 			margin-left: -375px
+
+
+@media (max-width: 991px)
+	.main 
+		.container
+			width: 90%
+			margin-left: -45%
+			padding-top: 120px
+		.slide-inner
+			min-height: 390px
+			&_1
+			background-image: url(../img/slides_mob/slider_1min.jpg)
+			&_2
+				background-image: url(../img/slides_mob/slider_2min.jpg)
+			&_3
+				background-image: url(../img/slides_mob/slider_3min.jpg)
+			&_4
+				background-image: url(../img/slides_mob/slider_4min.jpg)
+		.carousel-indicators
+			li 
+				border-color: #000
+				background-color: transparent
+				&.active
+					background-color: #000
+		&-text
+			text-align: center
+			&__title
+				font-size: 23px
+			&__descr
+				font-size: 17px
+
+
+
+
